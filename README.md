@@ -10,8 +10,9 @@ Project files are kept inside a WSL2 folder location.
 
 Inspired by https://github.com/nickjj/dotfiles
 
-## Ubuntu 20.04
+## Ubuntu 20.04 inside WSL2
 
+```sh
 sudo apt-get update && sudo apt-get install -y \
   curl \
   git \
@@ -19,21 +20,31 @@ sudo apt-get update && sudo apt-get install -y \
   python3-pip \
   unzip \
   vim
- 
+```
  
 ## Clone dotfiles repo
+
+```sh
 git clone https://github.com/rengler33/dotfiles ~/dotfiles
 
+# Create symlinks to various dotfiles.
 ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases \
 && ln -s ~/dotfiles/.gitconfig ~/.gitconfig \
 && sudo ln -s ~/dotfiles/etc/wsl.conf /etc/wsl.conf
+```
 
 ### After editing the .gitconfig.user file to be personally relevant:
+```sh
 cp ~/dotfiles/.gitconfig.user ~/.gitconfig.user
+```
 
 ## Install AWS CLI V2
+```sh
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
   && unzip awscliv2.zip && sudo ./aws/install && rm awscliv2.zip
+```
   
 ## Install Heroku CLI
+```sh
 curl https://cli-assets.heroku.com/install.sh | sh
+```
