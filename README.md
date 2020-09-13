@@ -22,6 +22,7 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 ```sh
 sudo apt-get update && sudo apt-get install -y \
+  cookiecutter \
   curl \
   ffmpeg \
   git \
