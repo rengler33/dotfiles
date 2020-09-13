@@ -58,7 +58,7 @@ To be inside WSL automatically change default terminal from `cmd.exe` to `bash.e
 
 ## Windows Installs (using Chocolatey) from Powershell prompt (opened as administrator)
 ```powershell
-choco install -y`
+choco install -y `
 firefox `
 googlechrome `
 nordvpn `
