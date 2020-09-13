@@ -50,7 +50,7 @@ cp ~/dotfiles/.gitconfig.user ~/.gitconfig.user
 
 ### If using NordVPN, configure their nameservers:
 ```sh
-sudo cp ~/dotfiles/etc/resolv.conf /etc/resolv.conf
+sudo rm -r /etc/resolv.conf && cp ~/dotfiles/etc/resolv.conf /etc/resolv.conf
 ```
 
 ### Install AWS CLI V2
