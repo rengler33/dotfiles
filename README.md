@@ -55,3 +55,45 @@ curl https://cli-assets.heroku.com/install.sh | sh
 
 ## Pycharm Settings
 To be inside WSL automatically change default terminal from `cmd.exe` to `bash.exe`
+
+## Windows Installs (using Chocolatey) from Powershell prompt (opened as administrator)
+```powershell
+choco install `
+firefox `
+googlechrome `
+nordvpn `
+microsoft-windows-terminal `
+powertoys ` 
+autohotkey.install `
+ditto `
+7zip.install `
+vcredist140 `
+putty.install `
+curl `
+youtube-dl `
+ffmpeg `
+kodi `
+vlc `
+foobar2000 `
+winscp.install `
+qbittorrent `
+zoom `
+Skype `
+obs-studio `
+sizer `
+calibre `
+kindle `
+Adobereader `
+vim `
+markdownmonster `
+notepadplusplus.install `
+steam `
+epicgameslauncher `
+docker-desktop `
+pycharm `
+vscode `
+firacode `
+postman `
+git.install
+
+```
