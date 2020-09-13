@@ -101,7 +101,8 @@ pycharm `
 vscode `
 firacode `
 postman `
-git.install
+git.install `
+github-desktop
 ```
 
 
