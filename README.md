@@ -4,9 +4,12 @@ A few settings files for my current development setup
 
 I'm running Windows 10, using WSL2 with Ubuntu for development.
 
+
 I prefer to use Docker Desktop and configure Pycharm to use that as a remote interpreter. I also develop with VS Code in a similar way.
 
 Project files are kept inside a WSL2 folder location.
+
+Copy the items in the C/ folder manually to the Windows system.
 
 Inspired by https://github.com/nickjj/dotfiles
 
@@ -22,7 +25,7 @@ sudo apt-get update && sudo apt-get install -y \
   vim
 ```
  
-## Clone dotfiles repo
+### Clone dotfiles repo
 
 ```sh
 git clone https://github.com/rengler33/dotfiles ~/dotfiles
@@ -38,13 +41,13 @@ ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases \
 cp ~/dotfiles/.gitconfig.user ~/.gitconfig.user
 ```
 
-## Install AWS CLI V2
+### Install AWS CLI V2
 ```sh
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
   && unzip awscliv2.zip && sudo ./aws/install && rm awscliv2.zip
 ```
   
-## Install Heroku CLI
+### Install Heroku CLI
 ```sh
 curl https://cli-assets.heroku.com/install.sh | sh
 ```
