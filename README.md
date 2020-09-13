@@ -18,6 +18,7 @@ Inspired by https://github.com/nickjj/dotfiles
 ```sh
 sudo apt-get update && sudo apt-get install -y \
   curl \
+  ffmpeg \
   git \
   htop \
   python3-pip \
