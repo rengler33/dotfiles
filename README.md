@@ -52,3 +52,6 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 ```sh
 curl https://cli-assets.heroku.com/install.sh | sh
 ```
+
+## Pycharm Settings
+To be inside WSL automatically change default terminal from `cmd.exe` to `bash.exe`
