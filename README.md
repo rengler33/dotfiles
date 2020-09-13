@@ -112,4 +112,5 @@ To be inside WSL automatically change default terminal from `cmd.exe` to `bash.e
 
 ## Docker / WSL2 settings & best practices
 https://docs.docker.com/docker-for-windows/wsl/
+
 https://docs.microsoft.com/en-us/windows/wsl/compare-versions#use-the-linux-file-system-for-faster-performance
