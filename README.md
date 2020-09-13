@@ -13,6 +13,11 @@ Copy the items in the C/ folder manually to the Windows system.
 
 Inspired by https://github.com/nickjj/dotfiles
 
+## Install WS2
+Afterwards you can install Ubuntu
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+
 ## Ubuntu 20.04 inside WSL2
 
 ```sh
@@ -53,7 +58,12 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 curl https://cli-assets.heroku.com/install.sh | sh
 ```
 
-## Windows Installs (using Chocolatey) from Powershell prompt (opened as administrator)
+## Windows Installs from Powershell prompt (opened as administrator)
+
+### Installing Chocolatey
+https://chocolatey.org/install
+
+### Installing applications
 ```powershell
 choco install -y `
 firefox `
@@ -94,5 +104,12 @@ postman `
 git.install
 ```
 
+
+# Notes
+
 ## Pycharm Settings
 To be inside WSL automatically change default terminal from `cmd.exe` to `bash.exe`
+
+## Docker / WSL2 settings & best practices
+https://docs.docker.com/docker-for-windows/wsl/
+https://docs.microsoft.com/en-us/windows/wsl/compare-versions#use-the-linux-file-system-for-faster-performance
