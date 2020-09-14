@@ -121,6 +121,12 @@ postman
 
 # Notes
 
+## Windows Terminal
+You can change the default profile of windows terminal to be a WSL distro. You can also change the starting directory in the settings. See the example file.
+
+## VS Code
+Start with the "Remote Development" extension pack.
+
 ## Pycharm Settings
 To be inside WSL automatically change default terminal from `cmd.exe` to `bash.exe`
 
