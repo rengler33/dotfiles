@@ -5,7 +5,7 @@ A few settings files for my current development setup
 I'm running Windows 10, using WSL2 with Ubuntu for development.
 
 
-I prefer to use Docker Desktop and configure Pycharm to use that as a remote interpreter. I also develop with VS Code in a similar way.
+I prefer to use Docker Desktop and configure VS Code to use that as a remote interpreter. I also develop with Pycharm in a similar way but have issues with the debugger so I've been leaning on VS Code.
 
 Project files are kept inside a WSL2 folder location.
 
@@ -14,9 +14,22 @@ Copy the items in the C/ folder manually to the Windows system.
 Inspired by https://github.com/nickjj/dotfiles
 
 ## Install WS2
-Afterwards you can install Ubuntu
+
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
+Afterwards you can install Ubuntu or Debian or another distro
+
+## Note on Debian
+
+There is a possible bug related to the $PATH variables loading into WSL2. If you find you can't launch Windows binaries from inside WSL2 (like `code .`, they may not be in your PATH due to https://github.com/microsoft/WSL/issues/5779 . The solution is to remove the following lines from `/etc/profile`
+
+```
+if [ "`id -u`" -eq 0 ]; then
+  PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+else
+  PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+fi
+```
 
 ## Ubuntu 20.04 inside WSL2
 
