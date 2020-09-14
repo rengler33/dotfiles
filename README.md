@@ -77,10 +77,9 @@ googlechrome `
 nordvpn `
 microsoft-windows-terminal `
 powertoys ` 
-autohotkey.install `
+autohotkey `
 ditto `
 7zip.install `
-vcredist140 `
 putty.install `
 curl `
 youtube-dl `
@@ -96,19 +95,14 @@ obs-studio `
 sizer `
 calibre `
 kindle `
-Adobereader `
 vim `
 markdownmonster `
-notepadplusplus.install `
 steam `
-epicgameslauncher `
+git.install `
 docker-desktop `
 pycharm `
 vscode `
-firacode `
-postman `
-git.install `
-github-desktop
+postman
 ```
 
 
