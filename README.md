@@ -53,6 +53,7 @@ git clone https://github.com/rengler33/dotfiles ~/dotfiles
 # Create symlinks to various dotfiles.
 ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases \
 && ln -s ~/dotfiles/.gitconfig ~/.gitconfig \
+&& ln -s ~/dotfiles/.vimrc ~/.vimrc \
 && sudo ln -s ~/dotfiles/etc/wsl.conf /etc/wsl.conf
 ```
 
