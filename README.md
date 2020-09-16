@@ -9,8 +9,6 @@ I prefer to use Docker Desktop and configure VS Code to use that as a remote int
 
 Project files are kept inside a WSL2 folder location.
 
-Copy the items in the C/ folder manually to the Windows system.
-
 Inspired by https://github.com/nickjj/dotfiles
 
 ## Install WS2
@@ -31,10 +29,10 @@ else
 fi
 ```
 
-## Ubuntu 20.04 inside WSL2
+## Installs inside WSL2
 
 ```sh
-sudo apt-get update && sudo apt-get install -y \
+sudo apt update && sudo apt install -y \
   cookiecutter \
   curl \
   ffmpeg \
@@ -68,13 +66,15 @@ My example file has the nameservers for NordVPN
 sudo rm -r /etc/resolv.conf && cp ~/dotfiles/etc/resolv.conf /etc/resolv.conf
 ```
 
-### Install AWS CLI V2
+### Additional installs inside WSL2
+
+Install AWS CLI V2
 ```sh
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
   && unzip awscliv2.zip && sudo ./aws/install && rm awscliv2.zip
 ```
   
-### Install Heroku CLI
+Install Heroku CLI
 ```sh
 curl https://cli-assets.heroku.com/install.sh | sh
 ```
@@ -83,6 +83,9 @@ curl https://cli-assets.heroku.com/install.sh | sh
 
 ### Installing Chocolatey
 https://chocolatey.org/install
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
 
 ### Installing applications
 ```powershell
@@ -93,7 +96,6 @@ nordvpn `
 microsoft-windows-terminal `
 powertoys ` 
 autohotkey `
-ditto `
 7zip.install `
 putty.install `
 curl `
@@ -101,7 +103,6 @@ youtube-dl `
 ffmpeg `
 kodi `
 vlc `
-foobar2000 `
 winscp.install `
 qbittorrent `
 zoom `
@@ -120,6 +121,10 @@ vscode `
 postman
 ```
 
+### Additional Windows Steps
+
+Copy the items in the C/ folder manually to the Windows system if they're needed.
+
 
 # Notes
 
@@ -127,7 +132,7 @@ postman
 You can change the default profile of windows terminal to be a WSL distro. You can also change the starting directory in the settings. See the example file.
 
 ## VS Code
-Start with the "Remote Development" extension pack.
+Start with installing the "Remote Development" extension pack, a group of useful remote extensions.
 
 ## Pycharm Settings
 To be inside WSL automatically change default terminal from `cmd.exe` to `bash.exe`
