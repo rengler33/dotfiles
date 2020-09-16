@@ -10,3 +10,14 @@ set number
 syntax enable
 " Set a nice theme.
 color slate
+
+
+if has("gui_running")
+  " Set a nicer font.
+  set guifont=Consolas:h11:cDEFAULT
+  " Hide the toolbar.
+  set guioptions-=T
+endif
+
+" turn off obnoxious windows bells
+set belloff=all
