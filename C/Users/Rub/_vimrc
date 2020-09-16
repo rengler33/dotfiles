@@ -1,0 +1,12 @@
+"store the temporary files vim creates to a specific directory so they're not littering folders
+set backupdir=~/vimtmp//,.
+set directory=~/vimtmp//,.
+
+" Display line and column number in bottom ruler.
+set ruler
+" Display the line numbers.
+set number
+" Activate syntax highlighting.
+syntax enable
+" Set a nice theme.
+color slate
