@@ -1,0 +1,4 @@
+[wsl2]
+# Default memory is set to consume 80% of system memory
+# Uncomment the line below if you're on a weak computer and need to restrict memory usage, adjust as needed
+#memory=0.5GB 
