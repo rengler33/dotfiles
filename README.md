@@ -125,6 +125,7 @@ postman
 
 Copy the items in the C/ folder manually to the Windows system if they're needed.
 
+Note that the `_vimrc` file needs the directory `$HOME\vimtmp` to be created in order to store temporary files there specifically
 
 # Notes
 
