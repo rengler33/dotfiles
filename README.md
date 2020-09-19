@@ -135,6 +135,10 @@ One AHK script I like to have is a minimize/un-minimize option for WindowsTermin
 ## Windows Terminal
 You can change the default profile of windows terminal to be a WSL distro. You can also change the starting directory in the settings. See the example file.
 
+Additionally you can create your own shortcut for windows terminal to open multiple tabs or panes using a target like this:
+`wt -p "Ubuntu"; split-pane -p "Ubuntu"; new-tab -p "Windows PowerShell"; focus-tab -t 0`
+See more about this here https://docs.microsoft.com/en-us/windows/terminal/command-line-arguments?tabs=windows
+
 ## VS Code
 Start with installing the "Remote Development" extension pack, a group of useful remote extensions.
 
