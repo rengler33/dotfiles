@@ -127,6 +127,9 @@ Copy the items in the C/ folder manually to the Windows system if they're needed
 
 Note that the `_vimrc` file needs the directory `~\vimtmp` to be created in order to store temporary files there specifically, otherwise it will use current directory.
 
+### Autohotkey Script(s)
+One AHK script I like to have is a minimize/un-minimize option for WindowsTerminal.exe, you can make it startup at login by placing the script in `C:\Users\`[your username]`Rub\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+
 # Notes
 
 ## Windows Terminal
