@@ -63,7 +63,7 @@ cp ~/dotfiles/.gitconfig.user ~/.gitconfig.user
 ### If using VPN, WSL2 will likely require you to configure their nameservers:
 My example file has the nameservers for NordVPN
 ```sh
-sudo rm -r /etc/resolv.conf && cp ~/dotfiles/etc/resolv.conf /etc/resolv.conf
+sudo rm -r /etc/resolv.conf && sudo cp ~/dotfiles/etc/resolv.conf /etc/resolv.conf
 ```
 
 ### Additional installs inside WSL2
