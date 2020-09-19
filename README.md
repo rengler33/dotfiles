@@ -68,6 +68,23 @@ sudo rm -r /etc/resolv.conf && sudo cp ~/dotfiles/etc/resolv.conf /etc/resolv.co
 
 ### Additional installs inside WSL2
 
+Install pip if needed
+```sh
+sudo apt update
+sudo apt install python3-pip
+```
+
+Install pipx
+```sh
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+```
+
+Install pipenv
+```sh
+pipx install pipenv
+```
+
 Install AWS CLI V2
 ```sh
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
