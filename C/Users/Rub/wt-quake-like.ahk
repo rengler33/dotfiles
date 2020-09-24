@@ -10,10 +10,9 @@
 
 #SingleInstance force
 
-; Bash process handle
+;handles
 BashHandle = ahk_exe WindowsTerminal.exe
-
-Shortcut = C:\Users\Rub\wt.exe.lnk
+Shortcut = "C:\Users\Rub\wt.exe.lnk"
 
 
 ; On CTRL+` press
@@ -21,7 +20,7 @@ Shortcut = C:\Users\Rub\wt.exe.lnk
     WinGet, wList, List, %BashHandle%
     if !wList{ ; if no windows exist
         ; just use BashHandle if you don't want to go the route of using a shortcut (for the extra options)
-       Run, Shortcut
+       Run, %Shortcut%
        return
     }
 
