@@ -71,7 +71,7 @@ Note: if the file is designated "immutable", you will need to use `chattr` to fi
 ```bash
 chattr -i /etc/resolv.conf
 vim /etc/resolv.conf
-chattr +i /etc/resolve.conf
+chattr +i /etc/resolv.conf
 ```
 
 ### Additional installs inside WSL2
