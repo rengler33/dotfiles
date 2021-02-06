@@ -14,8 +14,10 @@
         }
     },
     "python.formatting.provider": "black",
+    "python.formatting.blackPath": "$HOME\\.local\\bin\\black",
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "$HOME\\.local\\bin\\flake8",
     "python.linting.flake8Args": [
         "--max-line-length=88",
         "--extend-ignore=E203,E501,W503",
@@ -27,4 +29,9 @@
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.codeLens.enabled": false,
+    "settingsSync.ignoredSettings": [
+        "python.formatting.blackPath",
+        "python.sortImports.path",
+        "python.linting.flake8Path",
+    ]
 }
