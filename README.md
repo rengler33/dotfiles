@@ -67,6 +67,13 @@ My example file has the nameservers for NordVPN
 sudo rm -r /etc/resolv.conf && sudo cp ~/github/dotfiles/etc/resolv.conf /etc/resolv.conf
 ```
 
+Note: if the file is designated "immutable", you will need to use `chattr` to first be able to edit it. As superuser and owner of the file (root):
+```bash
+chattr -i /etc/resolv.conf
+vim /etc/resolv.conf
+chattr +i /etc/resolve.conf
+```
+
 ### Additional installs inside WSL2
 
 Install pip if needed
