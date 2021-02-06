@@ -39,6 +39,7 @@ sudo apt update && sudo apt install -y \
   git \
   htop \
   python3-pip \
+  rsync \
   unzip \
   vim
 ```
@@ -46,24 +47,24 @@ sudo apt update && sudo apt install -y \
 ### Clone dotfiles repo
 
 ```sh
-git clone https://github.com/rengler33/dotfiles ~/dotfiles
+git clone https://github.com/rengler33/dotfiles ~/github/dotfiles
 
 # Create symlinks to various dotfiles.
-ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases \
-&& ln -s ~/dotfiles/.gitconfig ~/.gitconfig \
-&& ln -s ~/dotfiles/.vimrc ~/.vimrc \
-&& sudo ln -s ~/dotfiles/etc/wsl.conf /etc/wsl.conf
+ln -s ~/github/dotfiles/.bash_aliases ~/.bash_aliases && \
+ln -s ~/github/dotfiles/.gitconfig ~/.gitconfig && \
+ln -s ~/github/dotfiles/.vimrc ~/.vimrc && \
+sudo ln -s ~/github/dotfiles/etc/wsl.conf /etc/wsl.conf
 ```
 
 ### After editing the .gitconfig.user file to be personally relevant:
 ```sh
-cp ~/dotfiles/.gitconfig.user ~/.gitconfig.user
+cp ~/github/dotfiles/.gitconfig.user ~/.gitconfig.user
 ```
 
 ### If using VPN, WSL2 will likely require you to configure their nameservers:
 My example file has the nameservers for NordVPN
 ```sh
-sudo rm -r /etc/resolv.conf && sudo cp ~/dotfiles/etc/resolv.conf /etc/resolv.conf
+sudo rm -r /etc/resolv.conf && sudo cp ~/github/dotfiles/etc/resolv.conf /etc/resolv.conf
 ```
 
 ### Additional installs inside WSL2
@@ -80,9 +81,17 @@ python3 -m pip install --user pipx
 python3 -m pipx ensurepath
 ```
 
-Install pipenv
+Install global python packages with pipx
 ```sh
-pipx install pipenv
+pipx install \
+pipenv \
+poetry \
+cookiecutter \
+black \
+isort \
+pytest \
+pre-commit \
+youtube-dl
 ```
 
 Install AWS CLI V2
@@ -106,35 +115,34 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ### Installing applications
 ```powershell
-choco install -y `
-firefox `
-googlechrome `
-nordvpn `
-microsoft-windows-terminal `
-powertoys ` 
-autohotkey `
-7zip.install `
-putty.install `
-curl `
-youtube-dl `
-ffmpeg `
-kodi `
-vlc `
-winscp.install `
-qbittorrent `
-zoom `
-Skype `
-obs-studio `
-sizer `
-calibre `
-kindle `
-vim `
-markdownmonster `
-steam `
-git.install `
-docker-desktop `
-pycharm `
-vscode `
+choco install -y \
+firefox \
+googlechrome \
+nordvpn \
+microsoft-windows-terminal \
+powertoys \
+autohotkey \
+7zip.install \
+putty.install \
+curl \
+ffmpeg \
+kodi \
+vlc \
+winscp.install \
+qbittorrent \
+zoom \
+obs-studio \
+sizer \
+calibre \
+kindle \
+vim \
+markdownmonster \
+steam \
+git.install \
+docker-desktop \
+pycharm \
+vscode \
+vscode-insiders \
 postman
 ```
 
