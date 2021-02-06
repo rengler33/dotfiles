@@ -94,6 +94,7 @@ pipx install \
 pipenv \
 poetry \
 cookiecutter \
+flake8 \
 black \
 isort \
 pytest \
