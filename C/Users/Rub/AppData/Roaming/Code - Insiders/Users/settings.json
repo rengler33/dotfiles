@@ -1,0 +1,30 @@
+{
+    "editor.formatOnSave": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter-notebook",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "python.insidersChannel": "daily",
+    "python.languageServer": "Pylance",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=88",
+        "--extend-ignore=E203,E501,W503",
+    ],
+    "python.sortImports.path": "isort",
+    "python.sortImports.args": [
+        "--profile=black",
+    ],
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+}
