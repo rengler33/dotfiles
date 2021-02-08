@@ -175,6 +175,18 @@ See more about this here https://docs.microsoft.com/en-us/windows/terminal/comma
 ## VS Code
 Start with installing the "Remote Development" extension pack, a group of useful remote extensions.
 
+### Useful Extensions
+- Remote Development (Extension Pack)
+- Vim
+- Docker
+- GitLens
+- Rainbow Brackets
+- Python
+- Pylance
+- Python Docstring Generator
+- Python Indents
+- Jupyter
+
 ## Pycharm Settings
 To be inside WSL automatically change default terminal from `cmd.exe` to `bash.exe`
 
