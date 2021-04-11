@@ -46,12 +46,24 @@ sudo apt update && sudo apt install -y \
 
 Close wsl2 and re-open (or logout/login) so PATH can be updated
  
+
+### Set up SSH keys
+ensure the following:
+```sh
+chmod 700 ~/.ssh/
+chmod 644 ~/.ssh/<publickey>.pub
+chmod 600 ~/.ssh/<privatekey>
+```
+
 ### Clone dotfiles repo
 
+SSH
 ```sh
-git clone https://github.com/rengler33/dotfiles ~/github/dotfiles
+git clone git@github.com:rengler33/dotfiles.git ~/github/dotfiles/
+```
 
-# Create symlinks to various dotfiles.
+#### Create symlinks to various dotfiles.
+```sh
 ln -s ~/github/dotfiles/.bash_aliases ~/.bash_aliases && \
 ln -s ~/github/dotfiles/.gitconfig ~/.gitconfig && \
 ln -s ~/github/dotfiles/.vimrc ~/.vimrc && \
