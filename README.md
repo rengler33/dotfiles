@@ -42,6 +42,8 @@ sudo apt update && sudo apt install -y \
   unzip \
   vim
 ```
+
+Close wsl2 and re-open (or logout/login) so PATH can be updated
  
 ### Clone dotfiles repo
 
