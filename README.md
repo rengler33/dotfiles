@@ -33,7 +33,6 @@ fi
 
 ```sh
 sudo apt update && sudo apt install -y \
-  cookiecutter \
   curl \
   ffmpeg \
   git \
