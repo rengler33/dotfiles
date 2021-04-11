@@ -29,6 +29,10 @@ else
 fi
 ```
 
+## Note on WSL internet troubles
+I have sometimes had a lot of difficulty maintaining an internet connection inside the WSL2 environment. This is always due to something about `/etc/resolv.conf`, which WSL tries to automatically set. Docker Desktop seems to interfere, and VPNs will definitely mess this up. I generally fix it by removing the "auto-generated" file (which sometimes is just a symlink that doesn't actually point to a file??) and replacing it with a file that has the following contents: `nameserver 8.8.8.8` (google's nameserver), or if I'm behind a VPN I look up the specific nameservers I will need. I don't know enough about networking to understand this issue deeper.
+
+
 ## Installs inside WSL2
 
 ```sh
