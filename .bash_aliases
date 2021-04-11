@@ -4,4 +4,4 @@ alias dpsql="docker-compose exec postgres psql"
 
 alias drun='docker run --rm -it -v "${PWD}":/app'
 
-alias vsci='code-insiders'
+alias codi='code-insiders'
