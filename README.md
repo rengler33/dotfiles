@@ -76,6 +76,10 @@ vim /etc/resolv.conf
 chattr +i /etc/resolv.conf
 ```
 
+### Remove incredibly annoying Windows ding sound while in bash
+Go to /etc/inputrc and (as privileged user) umcomment/add line `set bell-style none`
+
+
 ### Additional installs inside WSL2
 
 Install pip if needed
