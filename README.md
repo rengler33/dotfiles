@@ -38,6 +38,7 @@ sudo apt update && sudo apt install -y \
   git \
   htop \
   python3-pip \
+  python3-venv \
   rsync \
   unzip \
   vim
