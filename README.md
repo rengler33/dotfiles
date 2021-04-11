@@ -122,34 +122,34 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ### Installing applications
 ```powershell
-choco install -y \
-firefox \
-googlechrome \
-nordvpn \
-microsoft-windows-terminal \
-powertoys \
-autohotkey \
-7zip.install \
-putty.install \
-curl \
-ffmpeg \
-kodi \
-vlc \
-winscp.install \
-qbittorrent \
-zoom \
-obs-studio \
-sizer \
-calibre \
-kindle \
-vim \
-markdownmonster \
-steam \
-git.install \
-docker-desktop \
-pycharm \
-vscode \
-vscode-insiders \
+choco install -y `
+firefox `
+googlechrome `
+nordvpn `
+microsoft-windows-terminal `
+powertoys `
+autohotkey `
+7zip.install `
+putty.install `
+curl `
+ffmpeg `
+kodi `
+vlc `
+winscp.install `
+qbittorrent `
+zoom `
+obs-studio `
+sizer `
+calibre `
+kindle `
+vim `
+markdownmonster `
+steam `
+git.install `
+docker-desktop `
+pycharm `
+vscode `
+vscode-insiders `
 postman
 ```
 
