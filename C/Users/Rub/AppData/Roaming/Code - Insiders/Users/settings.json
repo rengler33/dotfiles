@@ -29,9 +29,15 @@
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.command": "gitlens.openCommitOnRemote",
     "settingsSync.ignoredSettings": [
         "python.formatting.blackPath",
         "python.sortImports.path",
         "python.linting.flake8Path",
-    ]
+    ],
+    "vim.highlightedyank.enable": true,
+    "vim.smartRelativeLine": true,
+    "vim.useSystemClipgoard": true,
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 7,
 }
