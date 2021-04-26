@@ -37,7 +37,7 @@
     ],
     "vim.highlightedyank.enable": true,
     "vim.smartRelativeLine": true,
-    "vim.useSystemClipgoard": true,
+    "vim.useSystemClipboard": true,
     "editor.lineNumbers": "relative",
     "editor.cursorSurroundingLines": 7,
 }
