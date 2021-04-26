@@ -40,4 +40,7 @@
     "vim.useSystemClipboard": true,
     "editor.lineNumbers": "relative",
     "editor.cursorSurroundingLines": 7,
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
 }
