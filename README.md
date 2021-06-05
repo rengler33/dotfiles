@@ -59,6 +59,16 @@ chmod 644 ~/.ssh/<publickey>.pub
 chmod 600 ~/.ssh/<privatekey>
 ```
 
+Probably want to set up ssh-agent (if below command doesn't work, you may need to specify filepath specifically):
+```
+ssh-add -l
+```
+
+To start:
+```
+eval `ssh-agent`
+```
+
 ### Clone dotfiles repo
 
 SSH
