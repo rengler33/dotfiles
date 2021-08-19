@@ -45,7 +45,9 @@ sudo apt update && sudo apt install -y \
   python3-venv \
   rsync \
   unzip \
-  vim
+  vim \
+  tmux \
+  neovim
 ```
 
 Close wsl2 and re-open (or logout/login) so PATH can be updated
