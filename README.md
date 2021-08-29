@@ -126,7 +126,6 @@ Install global python packages with pipx
 ```sh
 pipx install \
 pipenv \
-poetry \
 cookiecutter \
 flake8 \
 black \
