@@ -52,6 +52,8 @@ sudo apt update && sudo apt install -y \
 
 Close wsl2 and re-open (or logout/login) so PATH can be updated
  
+### Pyenv and Poetry install
+[Pyenv](https://github.com/pyenv/pyenv-installer) and [Poetry](https://python-poetry.org/docs/#installation) are best installed through their installer scripts called out in their documentation.
 
 ### Set up SSH keys
 ensure the following:
