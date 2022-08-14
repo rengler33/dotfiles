@@ -229,3 +229,23 @@ To be inside WSL automatically change default terminal from `cmd.exe` to `bash.e
 https://docs.docker.com/docker-for-windows/wsl/
 
 https://docs.microsoft.com/en-us/windows/wsl/compare-versions#use-the-linux-file-system-for-faster-performance
+
+
+## SMB Network shares
+Install `sudo apt install cifs-utils`
+
+Create a file in `~/.smbcredentials` that looks like this:
+
+```
+username=<USERNAME>
+password=<PASSWORD>
+```
+Run `sudo chmod 600 ~/.smbcredentials` to lock down file permissions on that file.
+
+Edit `/etc/fstab` to include a line with the following:
+```
+//<SERVER>/<SHARE> <MOUNTPATH> cifs rw,credentials=~/.smbcredentials,iocharset=utf8,nounix,file_mode=0777,dir_mode=0777 0 0
+```
+Note the mountpath will need folders that already exist, e.g. `/mnt/hagrid/courses`
+
+Run `sudo mount -a` to mount the paths.
