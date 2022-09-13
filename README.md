@@ -142,12 +142,7 @@ Install AWS CLI V2
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
   && unzip awscliv2.zip && sudo ./aws/install && rm awscliv2.zip
 ```
-  
-Install Heroku CLI
-```sh
-curl https://cli-assets.heroku.com/install.sh | sh
-```
-
+ 
 ## Windows Installs from Powershell prompt (opened as administrator)
 
 ### Installing Chocolatey
@@ -190,6 +185,8 @@ postman
 ```
 
 ### Additional Windows Steps
+
+Install MesloLGS NF font https://github.com/romkatv/dotfiles-public/tree/master/.local/share/fonts/NerdFonts (this is a good font that works well with oh-my-zsh and powerlevel10k)
 
 Copy the items in the C/ folder manually to the Windows system if they're needed.
 
